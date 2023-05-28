@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>
+			ToS Testing Grounds | v1.0.0
+		</title>
+		<link rel="shortcut icon" href="../Images/Icon.png">
+		<link rel="stylesheet" href="styles.css">
+		<script src="app.js">
+		</script>
+	</head>
+	<body bgcolor=black>
+		<div id="menu">
+			<center>
+				<br>
+				<br>
+				<br>
+				<img src="../Images/Icon.png" height=40%>
+				<p>
+				<h1>
+					Testing Grounds v1.0.0
+				</h1>
+				<br>
+				<br>
+				<br>
+				<input id="enter-name" type="text" placeholder="Enter Name..." value="">
+				<input id="join-lobby" type="button" value="Join Lobby" onclick="joinLobby()">
+			</center>
+		</div>
+		<div id="lobby">
+		</div>
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+			
+			const firebaseConfig = {
+				apiKey: "AIzaSyALo_-sIaEgdDt5lU3sAj5-IXdxARa1DTU",
+				authDomain: "testing-grounds-d6744.firebaseapp.com",
+				databaseURL: "https://testing-grounds-d6744-default-rtdb.firebaseio.com",
+				projectId: "testing-grounds-d6744",
+				storageBucket: "testing-grounds-d6744.appspot.com",
+				messagingSenderId: "554860833811",
+				appId: "1:554860833811:web:e82d62abfdeb99169b23e6"
+			};
+
+			const app = initializeApp(firebaseConfig);
+		</script>
+		<script type="text/javascript" src="https://tos-testing-grounds.firebaseapp.com/runtime.a66f828dca56eeb90e02.js"></script>
+		<script type="text/javascript" src="https://tos-testing-grounds.firebaseapp.com/polyfills.14fc14f3e029a8cfd046.js"></script>
+		<script type="text/javascript" src="https://tos-testing-grounds.firebaseapp.com/main.2eb2046276073df361f7.js"></script>
+	</body>
+</html>
